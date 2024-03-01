@@ -1,0 +1,5 @@
+---
+hosts: all
+tasks:
+  - name: copy ansible to web server
+    copy: src= /var/lib/jenkins/workspace/git/index.html dest: /usr/share/nginx/html
